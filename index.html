@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Passkey example</title>
+  <link href="https://cdn.jsdelivr.net/npm/halfmoon@2.0.0/css/halfmoon.min.css" rel="stylesheet" integrity="sha256-pfT/Otf/lK1xFNInb5QQR1uRF9cOP/8zDICH+QQ6o2c=" crossorigin="anonymous">
+</head>
+<body>
+  <section class="specific-w-300 p-3">
+    <form id="sign-up-form">
+      <div class="mb-3">
+        <input type="email" class="form-control" name="email" autocomplete="email webauthn" placeholder="Email" required>
+      </div>
+
+      <div class="mb-3 pb-3 border-bottom">
+        <button type="submit" class="btn btn-primary w-100">Register</button>
+      </div>
+    </form>
+
+    <form id="sign-in-form">
+      <button type="submit" class="btn btn-primary w-100">Sign in</button>
+    </form>
+  </section>
+
+  <script type="module" src="./js/main.mjs"></script>
+</body>
+</html>
